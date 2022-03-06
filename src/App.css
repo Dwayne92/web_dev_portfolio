@@ -1,10 +1,82 @@
 .App {
   background-color: #EDFFDE;
+  font-family: sans-serif;
+  text-align: center;
+  margin: 0 15px;
+  padding: 0 15px;
+
+}
+.container{
+  background: white;
+  margin: 0 125px 0 125px;
+  padding: 0 5px 0 5px;
+  text-align: center;
+}
+.maincont{
+width: 1000px;
+margin: 0 100px 0 100px;
+padding: 0 5px 0 5px;
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+}
+.tnimg{
+  width: 100%;
+}
+.techicons{
+  width: 600px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0 200px;
+}
+.tekicons{
+  width: 17%;
+  margin: 5px 5px;
+
+}
+nav{
+  background: black;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  box-shadow: 1 7px 5px 0 rgba(11, 7, 3, .2);
+}
+.l{
+  color: white;
+  float: left;
+  position: relative;
+  left: 150px;
+  margin: 10px;
+  font-family: 'Playfair Display';
+  font-weight: bold;
+  font-size: 24px;
+}
+.headshot{
+  width: 100%;
+}
+.shotcontainer{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  left: 1175px;
+}
+h1{
+  font-family: 'Playfair Display';
 }
 body{
-  background-color: #F6F9ED;
+  background-color: grey;
+  /* background-color: #F6F9ED; */
 }
-.header{
+/* .header{
   position: absolute;
   background-color: grey;
   top: 0;
@@ -12,17 +84,56 @@ body{
   left: 0;
   right: 0;
   height: 5%;
+  margin-bottom: 10px;
 }
 h1{
   color: #F6F9ED;
   text-align: center;
-  font-size: 90%;
+  font-size: 100%;
 }
-@media (max-width: 375pt){
+h4{
+  padding-top: 20px;
+  text-align: center;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+h5{
+  text-align: center;
+  padding: 3px;
+  color: red;
+}
+h6{
+  font-family: 'courier new';
+}
+.tnimg{
+  width:100%;
+}
+.nasacaption{
+  border: 1px solid black;
+  padding: 2px;
+  width: 94%;
+}
+.nasades{
+  font-family: 'courier new';
+}
+.des{
+  text-align: center;
+}
+.navBar button {
+  position: fixed;
+  left: 40px;
+  top: 40px;
+  z-index: 10;
+  cursor: pointer;
+} */
+
+
+/* @media (max-width: 375pt){
   .maincont{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
   }
-}
+
+} */
