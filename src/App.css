@@ -105,7 +105,7 @@ padding: 0 5px 0 5px; */
   z-index: 5;
 }
 .toprestdiv{
-  min-width: 550px;
+  min-width: 450px;
   width: 60%;
   display: flex;
   flex-direction: column;
@@ -186,6 +186,12 @@ margin: 0;
 
 @media only screen and (max-width: 800px){
   /* max-width: 768px originally */
+  .firstsec{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
   .slidersec{
     display: flex;
     flex-wrap: wrap;
