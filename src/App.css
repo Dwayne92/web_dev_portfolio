@@ -11,19 +11,13 @@ h4{
   text-align: center;
 }
 
-.slidersec{
-  width: 100%;
-background-image: radial-gradient(#AA5147, #CF5147);
- display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
+
 
 .title{
   margin: 7px 9px;
   text-align: center;
   color: #fff;
+  font-size: 6vw;
 }
 .container{
   /* background: white;
@@ -121,6 +115,7 @@ padding: 0 5px 0 5px; */
 
 .landingimgcnt{
   width: 30%;
+  min-width: 30%;
 }
 .landingimg{
   /* height: 26vh; */
@@ -152,20 +147,23 @@ padding: 0 5px 0 5px; */
   margin: 5px 5px;
 }
 .slidersec{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  width: 100%;
+  background-color: #16D98E;
+/* background-image: radial-gradient(#AA5147, #CF5147); */
+ display: flex;
+ flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
   height: 100vh;
-  width: 100vw;
 }
+
 .slidercontentdiv{
   width: 30%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-width: 300px;
+  min-width: 30%;
   margin: 0;
   padding: 0;
 }
@@ -180,45 +178,63 @@ padding: 0 5px 0 5px; */
 }
 .slidersectitle{
   font-family: 'Lobster';
-  font-size: 40pt;
+  font-size: 6vw;
   color: #D9BAEA;
   width: 100%;
   height: 100%;
-  position: fixed;
+  margin-bottom: -8px;
+  border: 2px solid orange;
+
 }
 .slidersec-content{
   color: #fff;
-  line-height: 4em;
+  line-height: 3.2em;
   font-weight: bold;
-  column-count: 1;
+
   /* margin-right: 12px; */
   font-family: 'Quicksand';
   width: 100%;
   height: 100%;
+  margin: 0 10px 0 0;
+  font-size: 1.7vw;
+}
+.slidercontentdiv{
+  align-self: flex-start;
+  width: 30vw;
 }
 .sliderdiv{
-  margin: 0;
+  margin: 0 7px;
   padding: 0;
-  width: 60%;
+  width: 60vw;
+
 
 }
-@media only screen and (max-width: 768px){
+.slides{
+margin: 0;
+}
+
+@media only screen and (max-width: 800px){
+  /* max-width: 768px originally */
   .slidersec{
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     height: 120vh;
+    align-items: center;
+    justify-content: center;
   }
-  .slidercolumnholder{
+  .slidercontentdiv{
+    width: 80%;
     height: 50vh;
   }
   .slidersec-content{
     width: 100%;
     height:100%;
+    text-align: center;
   }
   .sliderdiv{
-    height: 70vh;
+
     width: 100%;
-    align-self: flex-end;
+
   }
 }
 .contactsec{

@@ -2,6 +2,7 @@ import './App.css';
 import axios from 'axios'
 import React, { useState, useEffect } from 'react'
 import { render } from 'react-dom'
+import ReactFitText from 'react-fittext'
 // import { BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom'
 // import Navbar from './components/Navbar'
 // import About from './routes/About'
@@ -48,13 +49,15 @@ const settings = {
   // <div className='shotcontainer'>
   // <img src='IMG_5031.jpg' className='headshot' />
   // </div>
+
+  // goes in between container and firstsec <nav>
+  //
+  //
+  // </nav>
   return (
 
   <div className='container'>
-    <nav>
 
-
-    </nav>
 
 
 
@@ -86,14 +89,18 @@ const settings = {
     </div>
       <div className="slidersec">
       <div className="slidercontentdiv">
-        <div className="slidercolumnholder">
+        <div className="slidertitlediv">
         <u><h2 className="slidersectitle">Built and Designed</h2></u>
+        </div>
+
+        <div className="slidercontentholder">
         <p className="slidersec-content">These are a collection of projects that I designed and built using
         various technologies such as HTML, CSS, Javascript, Typescript, React.js,
         Node.js, SQL & NOSQL databases, Python, Django, Flask, etc. For more
         information, contact me.</p>
         </div>
-      </div>
+
+        </div>
         <div className='sliderdiv'>
           <Slider {...settings}>
             {sliderContent.map((sites)=>{
