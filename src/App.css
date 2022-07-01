@@ -10,6 +10,7 @@
   text-align: center;
   color: #fff;
   font-size: 6vw;
+  font-family: 'Playfair';
 }
 .container{
   /* background: white;
@@ -105,7 +106,6 @@ padding: 0 5px 0 5px; */
   z-index: 5;
 }
 .toprestdiv{
-  min-width: 450px;
   width: 60%;
   display: flex;
   flex-direction: column;
@@ -191,6 +191,10 @@ margin: 0;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-wrap: nowrap;
+  }
+  .toprestdiv{
+    width: 100%;
   }
   .slidersec{
     display: flex;
