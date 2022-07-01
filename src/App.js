@@ -1,8 +1,8 @@
 import './App.css';
-import axios from 'axios'
-import React, { useState, useEffect } from 'react'
-import { render } from 'react-dom'
-import ReactFitText from 'react-fittext'
+// import axios from 'axios'
+// import React, { useState, useEffect } from 'react'
+// import { render } from 'react-dom'
+// import ReactFitText from 'react-fittext'
 // import { BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom'
 // import Navbar from './components/Navbar'
 // import About from './routes/About'
@@ -38,7 +38,6 @@ const settings = {
   slideToShow: 1,
   className: "slides",
   autoplay: true,
-  speed: 2500,
     autoplaySpeed: 3000,
     cssEase: "linear"
 }
@@ -66,7 +65,7 @@ const settings = {
 
     <div className='firstsec'>
       <div className='landingimgcnt'>
-        <img className='landingimg' src='balloons.png' />
+        <img className='landingimg' src='balloons.png' alt='' />
       </div>
       <div className='toprestdiv'>
         <div className='title-div'>
@@ -74,16 +73,16 @@ const settings = {
         </div>
         <h5 className='title'>Full-Stack Developer</h5>
         <div className='techicons'>
-          <img src='html5.png' className='tekicons' />
-          <img src='css3.png' className='tekicons' />
-          <img src='javascript.png' className='tekicons' />
-          <img src='bootstrap.png' className='tekicons' />
-          <img src='react-icon.png' className='tekicons' />
-          <img src='nodejs.png' className='tekicons' />
-          <img src='expressjs.png' className='tekicons' />
-          <img src='mongodb.png' className='tekicons' />
-          <img src='python-vertical.png' className='tekicons' />
-          <img src='django.png' className='tekicons' />
+          <img src='html5.png' className='tekicons' alt='' />
+          <img src='css3.png' className='tekicons' alt='' />
+          <img src='javascript.png' className='tekicons' alt='' />
+          <img src='bootstrap.png' className='tekicons' alt='' />
+          <img src='react-icon.png' className='tekicons' alt='' />
+          <img src='nodejs.png' className='tekicons' alt='' />
+          <img src='expressjs.png' className='tekicons' alt='' />
+          <img src='mongodb.png' className='tekicons' alt='' />
+          <img src='python-vertical.png' className='tekicons' alt='' />
+          <img src='django.png' className='tekicons' alt='' />
         </div>
       </div>
     </div>
@@ -106,7 +105,7 @@ const settings = {
             {sliderContent.map((sites)=>{
               return(
                 <div>
-                  <img className="z-image" src={sites.image} />
+                  <img className="z-image" src={sites.image} alt='' />
                 </div>
                   )
                   })}
@@ -118,7 +117,7 @@ const settings = {
           <h1 className="contact-title">Contact</h1>
         </div>
         <div className="contactimgdiv">
-          <img className="contactimg" src="nphone.png" />
+          <img className="contactimg" src="nphone.png" alt='' />
         </div>
 
 
