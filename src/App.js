@@ -71,7 +71,7 @@ const settings = {
         <div className='title-div'>
           <h1 className='title'>Modern<br/>Web Development</h1>
         </div>
-        <h5 className='title'>Full-Stack Developer</h5>
+        <h5 className='subtitle'>Full-Stack Developer</h5>
         <div className='techicons'>
           <img src='html5.png' className='tekicons' alt='' />
           <img src='css3.png' className='tekicons' alt='' />
@@ -89,7 +89,7 @@ const settings = {
       <div className="slidersec">
       <div className="slidercontentdiv">
         <div className="slidertitlediv">
-        <u><h2 className="slidersectitle">Built and Designed</h2></u>
+        <h2 className="slidersectitle">Built and Designed</h2>
         </div>
 
         <div className="slidercontentholder">
@@ -113,11 +113,12 @@ const settings = {
         </div>
       </div>
       <div className="contactsec">
-        <div className="contactcontent">
-          <h1 className="contact-title">Contact</h1>
-        </div>
+
         <div className="contactimgdiv">
           <img className="contactimg" src="nphone.png" alt='' />
+        </div>
+        <div className="contactcontent" onClick={(event)=>window.open('https://www.upwork.com/freelancers/~019934926e15553f0e', "_self", "popup")}>
+          <h1 className="contact-title" onClick={(event)=>window.open('https://www.upwork.com/freelancers/~019934926e15553f0e', "_self", "popup")}>Contact</h1>
         </div>
 
 
