@@ -93,8 +93,9 @@ const settings = {
         </div>
 
         <div className="slidercontentholder">
-        <p className="slidersec-content">These are a collection of projects that I designed and built using
-        various technologies such as HTML, CSS, Javascript, Typescript, React.js,
+        <p className="slidersec-content">I design and build websites using the best and
+         latest languages and technologies such as
+          HTML5, CSS3, Javascript, Typescript, React.js,
         Node.js, SQL & NOSQL databases, Python, Django, Flask, etc. For more
         information, contact me.</p>
         </div>
