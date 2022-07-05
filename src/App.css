@@ -190,7 +190,7 @@ padding: 0 5px 0 5px; */
 .slides{
 margin: 0;
 }
-@media only screen and (max-height: 600px) and (max-width: 1000px){
+@media only screen and (max-height: 920px) and (max-width: 1800px){
   .firstsec{
     display: flex;
     flex-direction: column;
