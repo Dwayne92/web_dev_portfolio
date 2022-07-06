@@ -235,7 +235,7 @@ margin: 0;
 
   }
 }
-@media only screen and (max-width: 700px) and (min-height: 720px){
+@media only screen and (max-width: 700px) and (min-height: 400px){
   /* max-width: 768px originally */
   .firstsec{
     display: flex;
@@ -246,7 +246,7 @@ margin: 0;
   }
   .landingimgcnt{
     align-self: center;
-  
+
   }
   .toprestdiv{
     margin: 0;
@@ -270,6 +270,7 @@ margin: 0;
   .slidersectitle{
     font-size: 12vw;
     text-shadow: 1.8px -5.5px #0C9BAD;
+    margin-bottom: -75px;
   }
   .slidersec-content{
     width: 100%;
@@ -277,6 +278,7 @@ margin: 0;
     text-align: center;
     font-size: 3.4vw;
     padding-top: 55px;
+    line-height: 1.6em
   }
   .sliderdiv{
     margin-bottom: -4px;
