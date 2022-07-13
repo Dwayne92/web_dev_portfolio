@@ -10,9 +10,7 @@ import './App.css';
 import ContactSec from './components/Contact'
 import ProjectSec from './components/Projects'
 import LandingContainer from './components/Landing'
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import Slider from "react-slick"
+
 // const getActivity = () => {
 //   axios.get('https://www.boredapi.com/api/activity').then((response) => {
 //     setActivity(response.data.activity)
