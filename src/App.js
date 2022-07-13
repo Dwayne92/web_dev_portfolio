@@ -7,6 +7,9 @@ import './App.css';
 // import Navbar from './components/Navbar'
 // import About from './routes/About'
 // import Selfie from './routes/Selfie'
+import ContactSec from './components/Contact'
+import ProjectSec from './components/Projects'
+import LandingContainer from './components/Landing'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick"
@@ -28,19 +31,7 @@ import Slider from "react-slick"
 
 export default function App() {
 
-  const sliderContent = [{image: 'map.png'},{image: 'grecipe.png'}, {image: 'am.png'}, {image: 'rm.png'}]
 
-const settings = {
-  dots: false,
-  fade: false,
-  infinite: true,
-  speed: 700,
-  slideToShow: 1,
-  className: "slides",
-  autoplay: true,
-    autoplaySpeed: 3000,
-    cssEase: "linear"
-}
 
 
 
@@ -56,74 +47,11 @@ const settings = {
   return (
 
   <div className='container'>
+      <LandingContainer />
+      <ProjectSec />
+      <ContactSec />
 
 
-
-
-
-
-
-    <div className='firstsec'>
-      <div className='landingimgcnt'>
-        <img className='landingimg' src='balloons.png' alt='' />
-      </div>
-      <div className='toprestdiv'>
-        <div className='title-div'>
-          <h1 className='title'>Modern<br/>Web Development</h1>
-        </div>
-        <h5 className='subtitle'>Full-Stack Developer</h5>
-        <div className='techicons'>
-          <img src='html5.png' className='tekicons' alt='' />
-          <img src='css3.png' className='tekicons' alt='' />
-          <img src='javascript.png' className='tekicons' alt='' />
-          <img src='bootstrap.png' className='tekicons' alt='' />
-          <img src='react-icon.png' className='tekicons' alt='' />
-          <img src='nodejs.png' className='tekicons' alt='' />
-          <img src='expressjs.png' className='tekicons' alt='' />
-          <img src='mongodb.png' className='tekicons' alt='' />
-          <img src='python-vertical.png' className='tekicons' alt='' />
-          <img src='django.png' className='tekicons' alt='' />
-        </div>
-      </div>
-    </div>
-      <div className="slidersec">
-      <div className="slidercontentdiv">
-        <div className="slidertitlediv">
-        <h2 className="slidersectitle">Built and Designed</h2>
-        </div>
-
-        <div className="slidercontentholder">
-        <p className="slidersec-content">I design and build websites using the best and
-         latest languages and technologies such as
-          HTML5, CSS3, Javascript, Typescript, React.js,
-        Node.js, SQL & NOSQL databases, Python, Django, Flask, etc. For more
-        information, contact me.</p>
-        </div>
-
-        </div>
-        <div className='sliderdiv'>
-          <Slider {...settings}>
-            {sliderContent.map((sites)=>{
-              return(
-                <div>
-                  <img className="z-image" src={sites.image} alt='' />
-                </div>
-                  )
-                  })}
-          </Slider>
-        </div>
-      </div>
-      <div className="contactsec">
-
-        <div className="contactimgdiv">
-          <img className="contactimg" src="nphone.png" alt='' />
-        </div>
-        <div className="contactcontent" onClick={(event)=>window.open('https://www.upwork.com/freelancers/~019934926e15553f0e', "_self", "popup")}>
-          <h1 className="contact-title" onClick={(event)=>window.open('https://www.upwork.com/freelancers/~019934926e15553f0e', "_self", "popup")}>Contact</h1>
-        </div>
-
-
-   </div>
    </div>
 
 
