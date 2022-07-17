@@ -74,6 +74,23 @@ padding: 0;
 overflow-x: hidden;
   /* background-color: #F6F9ED; */
 }
+nav{
+  position: sticky;
+}
+.navbar{
+  background-color: #472921;
+  height: 9vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+}
+.l{
+  margin-right: 20px;
+  color: #fff;
+  font-size: 3vw;
+  text-decoration: none;
+}
 .z-image{
   width: 100%;
 }
@@ -153,17 +170,25 @@ padding: 0 5px 0 5px; */
   margin: 0;
   padding-left: 10px;
 }
+.backlight{
+  position: absolute;
+  width: 300px;
+  height: 420px;
+  background-image:linear-gradient(to bottom, rgba(255,214,170), rgba(0,0,0,0) 44%), ;
+  transform: skewX(26deg);
+  z-index: 20;
 
+}
+.slidertitlediv{
+  height: 26vh;
+  overflow: hidden;
+  margin-bottom: 4px;
+}
 .slidersectitle{
-  font-family: 'Lobster';
-  font-size: 6vw;
-  color: #0EB0CF;
-  width: 100%;
-  height: 100%;
-  margin-bottom: -8px;
-  /* -webkit-text-stroke: .1px #096D7A; */
-  text-shadow: 1.8px -6.5px #0C9BAD;
-
+  width: 90%;
+  /* margin-bottom: -350px; */
+  position: relative;
+  z-index: 10;
 }
 .slidersec-content{
   line-height: 2em;
@@ -175,7 +200,7 @@ padding: 0 5px 0 5px; */
   font-family: 'Quicksand';
   width: 100%;
   height: 100%;
-  margin: 10px 10px 0 0;
+  margin: 3px 10px 0 0;
   font-size: 1.7vw;
 }
 .sliderdiv{
@@ -218,6 +243,69 @@ margin: 0;
 }
 .contactimg{
 width: 100%;}
+.aboutcontainer{
+  background-color: tan;
+  height: 100%;
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+
+}
+.aboutbody{
+  display: flex;
+  justify-content: space-around;
+}
+.aboutpic{
+  width: 30vw;
+}
+.aboutpicdiv{
+  margin-left: 7px;
+  border-radius: 7px;
+  overflow: hidden;
+  width: 48vw;
+  height: 75vh;
+}
+.abouttemptext{
+  margin-top: -20px;
+  font-size: 8vw;
+  text-align: center;
+  /* margin-right: 100px; */
+  /* align-self: center; */
+}
+.biodiv{
+  width: 48vw;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  line-height: 2em;
+  margin-top: -28px;
+}
+.toughchatsec{
+  height: 100vh;
+}
+.mascottcont{
+  position: relative;
+
+}
+.mascottbody{
+  position: absolute;
+  width: 40%;
+  z-index: 3;
+}
+.mascottleftarm{
+  position: absolute;
+  width: 40%;
+
+}
+.mascottrightarm{
+  position: absolute;
+  width: 40%;
+  left: 400px;
+  top: 130px;
+  transform: rotate(23deg);
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-name: rightarm;
+}
 @media only screen and (max-height: 700px) and (min-width: 550px){
   .firstsec{
     display: flex;
@@ -283,6 +371,18 @@ width: 100%;}
     width: 100%;
   }
 }
+
+@keyframes rightarm {
+  50%{
+    transform: rotate(-11deg) translate(0,-200px);
+  }
+  80%{
+    transform: rotate(11deg);
+  }
+  100%{
+
+  }
+}
 @media only screen and (max-width: 700px) and (min-height: 400px){
   /* max-width: 768px originally */
   .firstsec{
@@ -315,13 +415,16 @@ width: 100%;}
 
     /* border: 1px solid orange; */
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
+  }
+  .slidertitlediv{
+    height: 55vh;
+    display: flex;
+    justify-content: center;
   }
   .slidersectitle{
-    font-size: 12vw;
-    text-shadow: 1.8px -5.5px #0C9BAD;
-    /* margin-bottom: -75px; */
-    margin: 0;
+    width: 100vw;
+    height: 67vh;
   }
   .slidersec-content{
     width: 100%;
@@ -350,6 +453,30 @@ width: 100%;}
     align-self: center;
     border: 2px solid orange;
     text-align: center;
+  }
+  .aboutcontainer{
+    height: 100%;
+  }
+  .abouttemptext{
+    margin-top: 7px;
+  }
+  .aboutbody{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .aboutpicdiv{
+    width: 85%;
+  }
+  .aboutpic{
+    width: 100%;
+  }
+  .biodiv{
+    width: 85%;
+    height: 100%;
+    margin-top: 6px;
+    text-align: center;
+    line-height: 1.5em;
   }
 }
 /* .header{

@@ -3,13 +3,13 @@ import './App.css';
 // import React, { useState, useEffect } from 'react'
 // import { render } from 'react-dom'
 // import ReactFitText from 'react-fittext'
-// import { BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom'
 // import Navbar from './components/Navbar'
 // import About from './routes/About'
 // import Selfie from './routes/Selfie'
-import ContactSec from './components/Contact'
-import ProjectSec from './components/Projects'
-import LandingContainer from './components/Landing'
+
+import Home from './components/Home'
+import About from './components/About'
 
 // const getActivity = () => {
 //   axios.get('https://www.boredapi.com/api/activity').then((response) => {
@@ -45,9 +45,21 @@ export default function App() {
   return (
 
   <div className='container'>
-      <LandingContainer />
-      <ProjectSec />
-      <ContactSec />
+
+  <Router>
+  <nav className='navbar'>
+    <Link to='/' className='l'>Home</Link>
+    <Link to='/about' className='l'>About</Link>
+
+
+  </nav>
+   <Routes>
+      <Route path='/' element={<Home />} />
+     <Route path='/about' element={<About />} />
+
+   </Routes>
+  </Router>
+
 
 
    </div>
@@ -57,6 +69,13 @@ export default function App() {
 
   );
 }
+
+// function About(){
+//
+// }
+//
+//
+
 
 // const [apodPic,setapodPic] = useState('')
 // const [activity,setActivity] = useState('')
@@ -78,11 +97,7 @@ export default function App() {
 //     </div>
 //   )
 // }
-// function Test(){
-//   return (
-//     <div>
-//     <h1>Test</h1>
-//     </div>
+
 //   )
 // }
 
@@ -103,18 +118,4 @@ export default function App() {
 // </div>
 
 
-// <Router>
-// <nav>
-//   <Link to='/' className='l'>Home</Link>
-//   <Link to='/about' className='l'>About</Link>
-//   <div className='shotcontainer'>
-//   <img src='IMG_5031.jpg' className='headshot' />
-//   </div>
 //
-// </nav>
-//  <Routes>
-//     <Route path='/' element={<Home />} />
-//    <Route path='/about' element={<Test />} />
-//
-//  </Routes>
-// </Router>

@@ -25,10 +25,10 @@ const ProjectSec = () => {
     <div className="slidersec">
     <div className="slidercontentdiv">
       <div className="slidertitlediv">
-      <h2 className="slidersectitle">Built and Designed</h2>
+      <img src='builtanddesigned.png' className='slidersectitle' />
       </div>
 
-      <div className="slidercontentholder">
+
       <p className="slidersec-content">I design and build websites using the best and
        latest languages and technologies such as
         HTML5, CSS3, Javascript, Typescript, React.js,
@@ -36,7 +36,6 @@ const ProjectSec = () => {
       information, contact me.</p>
       </div>
 
-      </div>
       <div className='sliderdiv'>
         <Slider {...settings}>
           {sliderContent.map((sites)=>{
