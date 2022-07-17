@@ -5,9 +5,9 @@ import React from 'react'
   return(
     <div className='toughchatsec'>
     <div className='mascottcont'>
-    <img src='tcmascott.png' className='mascottbody'/>
-    <img src='tcmascottleftarm.png' className='mascottleftarm' />
-    <img src='tcmascottrightarm.png' className='mascottrightarm' />
+    <img src='tcmascott.png' alt='' className='mascottbody'/>
+    <img src='tcmascottleftarm.png' alt='' className='mascottleftarm' />
+    <img src='tcmascottrightarm.png' alt='' className='mascottrightarm' />
     </div>
     <div className='toughchatcont'>
     </div>

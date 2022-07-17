@@ -25,7 +25,7 @@ const ProjectSec = () => {
     <div className="slidersec">
     <div className="slidercontentdiv">
       <div className="slidertitlediv">
-      <img src='builtanddesigned.png' className='slidersectitle' />
+      <img src='builtanddesigned.png' alt='' className='slidersectitle' />
       </div>
 
 

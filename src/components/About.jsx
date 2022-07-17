@@ -7,7 +7,7 @@ const About = () => {
      <h1 className='abouttemptext'>About</h1>
      <div className='aboutbody'>
      <div className='aboutpicdiv'>
-     <img src='aboutpic.jpg' className='aboutpic' />
+     <img src='aboutpic.jpg' alt='' className='aboutpic' />
      </div>
      <div className='biodiv'>
      <p className='bio'>I am a Software Engineer currently working with React.js, SQL, Flask, HTML, CSS, Javascript, Python. I am keen on developing time and space efficient, smoothly functioning products. As an individual with Data Science, and Design & Art experience, I am driven to building your vision through the use of the best technologies and practices, while having a meaningful relationship, and thought process with the included fields/subject matter.<br /><br />
