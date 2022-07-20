@@ -10,6 +10,7 @@ import { BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom'
 
 import Home from './components/Home'
 import About from './components/About'
+import Projectsec from './components/Projectsec'
 
 // const getActivity = () => {
 //   axios.get('https://www.boredapi.com/api/activity').then((response) => {
@@ -50,12 +51,14 @@ export default function App() {
   <nav className='navbar'>
     <Link to='/' className='l'>Home</Link>
     <Link to='/about' className='l'>About</Link>
+    <Link to='/projects' className='l'>Projects</Link>
 
 
   </nav>
    <Routes>
       <Route path='/' element={<Home />} />
      <Route path='/about' element={<About />} />
+     <Route path='/projects' element={<Projectsec />} />
 
    </Routes>
   </Router>

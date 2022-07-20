@@ -242,7 +242,8 @@ margin: 0;
   width: 50%;
 }
 .contactimg{
-width: 100%;}
+width: 100%;
+}
 .aboutcontainer{
   background-color: tan;
   height: 100%;
@@ -278,6 +279,75 @@ width: 100%;}
   justify-content: center;
   line-height: 2em;
   margin-top: -28px;
+}
+.projectscontainer{
+  display: flex;
+  /* flex-wrap: wrap; */
+  flex-direction: column;
+  height: 100%;
+  background-color: #fff;
+}
+.project1picdiv{
+  width: 40vw;
+  height: 47vh;
+  margin-top: 76px;
+  border-radius: 7px;
+  overflow: hidden;
+  margin-bottom: 160px;
+}
+.project1picdiv:hover{
+  cursor: pointer;
+  border: 2px solid white;
+}
+.project1sec{
+  display: flex;
+  justify-content: space-around;
+}
+.grecipeprojimg{
+  width: 100%;
+}
+.project1content{
+  width: 35vw;
+  height: 45vh;
+  line-height: 4.4rem;
+  margin-top: 76px;
+  border-top: 2px solid yellow;
+  border-right: 2px solid yellow;
+  border-top-right-radius: 7px;
+  padding-right: 26px;
+  margin-bottom: 160px;
+}
+.project1description{
+  text-align: right;
+}
+.project2sec{
+  display: flex;
+  justify-content: space-around;
+  height: 100vh;
+  /* background-color: navy; */
+}
+.project2picdiv{
+  width: 50vw;
+  height: 57vh;
+  border-radius: 7px;
+  overflow: hidden;
+}
+.project2picdiv:hover{
+  cursor: pointer;
+  border: 2px solid white;
+}
+.artmarketprojimg{
+  width: 100%;
+}
+.project2content{
+  padding-left: 26px;
+  line-height: 4.5rem;
+  width: 35vw;
+  height: 57vh;
+  border-left: 2px solid yellow;
+  border-bottom: 2px solid yellow;
+  display: flex;
+  align-items: flex-end;
 }
 .toughchatsec{
   height: 100vh;
@@ -477,6 +547,39 @@ width: 100%;}
     margin-top: 6px;
     text-align: center;
     line-height: 1.5em;
+  }
+  .projectscontainer{
+    flex-direction: column;
+  }
+  .project1sec{
+    flex-direction: column;
+  }
+  .project1picdiv{
+    width: 100vw;
+    margin-bottom: 30px;
+  }
+  .project1content{
+    width: 98vw;
+    line-height: 2rem;
+    margin-bottom: 30px;
+    text-align: center;
+    padding: 0 3px;
+  }
+  .project2sec{
+    flex-direction: column;
+  }
+  .project2picdiv{
+    width: 100vw;
+    margin-bottom: 30px;
+  }
+  .project2content{
+    width: 98vw;
+    line-height: 2rem;
+    text-align: center;
+    padding: 0 6px;
+  }
+  .des{
+    text-align: center;
   }
 }
 /* .header{
